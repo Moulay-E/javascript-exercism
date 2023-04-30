@@ -1,7 +1,7 @@
 import React from "react";
 
-function splits(){
-    let word = "hello world";
+
+function splits({word, fast}){
     //decoupe chaque elemetn un un index dans un tableau
     let tab = word.split("");
     console.log(tab);
@@ -11,15 +11,15 @@ function splits(){
     // glue element (string) each other
     tab = tab.join("");
     console.log(tab + " ho");
-    let fast = "that fast boy";
     //all in one
     let theFast = fast.split("").reverse().join("");
-    console.log(theFast + 'coucou');
+    console.log(theFast + 'hi');
     return(
         <p>
-            {tab} <br/> {theFast}
+            Function reverse:<br/> {tab} <br/> {theFast}
         </p>
     )
 
 };
+
 export default splits;
