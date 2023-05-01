@@ -22,4 +22,5 @@ function splits({word, fast}){
 
 };
 
+
 export default splits;
