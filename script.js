@@ -1,7 +1,8 @@
-import React from "react";
 
-
-function splits({word, fast}){
+const exo1 = document.querySelector(".exo");
+let reverse = "hello world";
+let reverseFast = "that fast boy";
+function splits(word, fast){
     //decoupe chaque elemetn un un index dans un tableau
     let tab = word.split("");
     console.log(tab);
@@ -14,13 +15,9 @@ function splits({word, fast}){
     //all in one
     let theFast = fast.split("").reverse().join("");
     console.log(theFast + 'hi');
-    return(
-        <p>
-            Function reverse:<br/> {tab} <br/> {theFast}
-        </p>
-    )
+   return {tab: tab, theFast: theFast};
+   
 
 };
-
-
-export default splits;
+const result = splits(reverse, reverseFast);
+exo1.innerHTML= `reverse ${result.tab} ${result.theFast}`;
