@@ -75,3 +75,13 @@ function randomFruit(){
 randomFruit();
 
 
+let upp = "every word in caps";
+let uppCaps = upp.split(" ");
+console.log(uppCaps);
+ let uppCapsWord = "";
+for(let i = 0; i < uppCaps.length; i++){
+    uppCapsWord +=" "+  uppCaps[i].charAt(0).toUpperCase() 
+    + uppCaps[i].slice(1);
+    console.log(uppCapsWord +'test');
+}
+console.log(uppCapsWord);
