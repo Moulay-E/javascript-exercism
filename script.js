@@ -74,14 +74,15 @@ function randomFruit(){
 };
 randomFruit();
 
-
-let upp = "every word in caps";
-let uppCaps = upp.split(" ");
-console.log(uppCaps);
- let uppCapsWord = "";
-for(let i = 0; i < uppCaps.length; i++){
-    uppCapsWord +=" "+  uppCaps[i].charAt(0).toUpperCase() 
-    + uppCaps[i].slice(1);
-    console.log(uppCapsWord +'test');
+//----------------------------------------------------
+function wordCaps(str){
+    let word = str.toLocaleLowerCase().split(" ");
+    let capsWord = [];
+    word.forEach(element => {
+        let toPush = element.charAt(0).toUpperCase()+element.slice(1);
+        capsWord.push(toPush);
+        console.log(capsWord );
+    });
+    console.log(capsWord.join(" "));
 }
-console.log(uppCapsWord);
+wordCaps("tous les premier mots en majuscules")
