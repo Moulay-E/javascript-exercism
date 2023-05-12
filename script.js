@@ -19,7 +19,6 @@ palindrome.innerHTML = words == theFast ?
     "ce mots n'est pas un palindrome";
 exo1.appendChild(palindrome);
 
-
 //----------exo de comparateur de longueur tableau--
 let longuestWordSplited;
 function longuestWord(word){
